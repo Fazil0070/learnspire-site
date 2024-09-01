@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnspire - Elevate Your Academy with Advanced LMS</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1539159640105-e1b52f7c18c2') no-repeat center center;
+            background-size: cover;
+        }
+
+        .hover-effect {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-item {
+            background: #ffffff;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            text-align: left;
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+
+        .feature-item:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #3b82f6;
+        }
+
+        .feature-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        .feature-description {
+            font-size: 1rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-3xl font-bold text-blue-600">Learnspire</h1>
+            <nav class="space-x-6">
+                <a href="#why-learnspire" class="hover:text-blue-600 font-semibold transition">Why Learnspire?</a>
+                <a href="#features" class="hover:text-blue-600 font-semibold transition">Features</a>
+                <a href="#demo" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-700 transition">Book a Demo</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-32 flex items-center min-h-screen">
+        <div class="container mx-auto text-center relative z-10 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl font-bold mb-6 leading-tight">Transform Your Academy with the #1 LMS Solution</h2>
+                <p class="text-xl mb-10 opacity-90">Advanced Learning Management System for Managing and Scaling Your Training Business</p>
+                <a href="#demo"
+                    class="inline-block bg-blue-600 text-white font-semibold py-4 px-8 rounded-full text-lg shadow-lg hover:bg-blue-700 transition transform hover:scale-105">Book a Free Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Learnspire Section -->
+    <section id="why-learnspire" class="py-24 bg-gray-100">
+        <div class="container mx-auto text-center px-6">
+            <h3 class="text-4xl font-bold text-gray-800 mb-8">Why Choose Learnspire?</h3>
+            <p class="text-xl text-gray-600 mb-16 max-w-3xl mx-auto">Learnspire offers a state-of-the-art LMS platform that leverages AI-powered analytics to enhance learning experiences, reduce tech costs by 60%, and boost learner satisfaction by 30%.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="p-8 bg-white shadow-lg rounded-xl hover-effect">
+                    <div class="text-blue-600 mb-6 feature-icon mx-auto">
+                        <i class="fas fa-rocket text-4xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-4">Accelerate Learner Engagement</h4>
+                    <p class="text-gray-600">Enhance engagement and completion rates with interactive course features and seamless integration.</p>
+                </div>
+                <div class="p-8 bg-white shadow-lg rounded-xl hover-effect">
+                    <div class="text-blue-600 mb-6 feature-icon mx-auto">
+                        <i class="fas fa-route text-4xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-4">Personalized Learning Paths</h4>
+                    <p class="text-gray-600">Tailor education journeys with AI-driven recommendations based on individual progress and goals.</p>
+                </div>
+                <div class="p-8 bg-white shadow-lg rounded-xl hover-effect">
+                    <div class="text-blue-600 mb-6 feature-icon mx-auto">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-4">Real-time AI Analytics</h4>
+                    <p class="text-gray-600">Access detailed, AI-driven reports on learner performance, course progress, and assessment outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-4xl font-bold mb-16 text-center text-gray-900">Explore Our Cutting-Edge Features</h3>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4 class="feature-title">Interactive Courses</h4>
+                    <p class="feature-description">Engage learners with dynamic, interactive content that adapts to their pace and style.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h4 class="feature-title">Smart Attendance Tracking</h4>
+                    <p class="feature-description">Automatically monitor participation and progress across all courses with ease.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4 class="feature-title">Real-World Coding Challenges</h4>
+                    <p class="feature-description">Sharpen skills with industry-relevant coding tasks and instant feedback.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h4 class="feature-title">Timely Announcements</h4>
+                    <p class="feature-description">Keep everyone in the loop with targeted, automated updates and notifications.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4 class="feature-title">AI Proctoring</h4>
+                    <p class="feature-description">Ensure exam integrity with advanced AI-powered monitoring and analysis.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h4 class="feature-title">User-Friendly Interface</h4>
+                    <p class="feature-description">Navigate effortlessly with our intuitive, accessible design for all user levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="demo" class="py-24 bg-gray-100">
+        <div class="container mx-auto text-center px-6">
+            <h3 class="text-4xl font-bold text-gray-800 mb-8">Experience Learnspire Firsthand</h3>
+            <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">See how Learnspire can transform your academy. Book a free demo today and unlock the potential of your learning programs.</p>
+            <a href="#"
+                class="inline-block bg-blue-600 text-white font-semibold py-4 px-8 rounded-full text-lg shadow-lg hover:bg-blue-700 transition transform hover:scale-105">Book Your Free Demo Now</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto text-center px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">About Learnspire</h4>
+                    <p>Empowering academies with cutting-edge LMS solutions since 2024.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">Stay Updated</h4>
+                    <form class="flex flex-col sm:flex-row justify-center items-center">
+                        <input type="email" placeholder="Enter your email" class="w-full sm:w-auto px-4 py-2 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        <button type="submit" class="w-full sm:w-auto mt-2 sm:mt-0 bg-blue-600 text-white px-6 py-2 rounded-r-full hover:bg-blue-700 transition">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="border-gray-800 mb-8">
+            <p>&copy; 2024 Learnspire. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
